@@ -6,4 +6,4 @@ import { fetchWrapper } from '../util/helpers.js'
 /**
  * Fetch all addons (GET)
  */
-export const getAddons = () => fetchWrapper(import.meta.env.VITE_API_BASE_URL + "Perkssss");
+export const getAddons = () => fetchWrapper(import.meta.env.VITE_API_BASE_URL + "Addons");
