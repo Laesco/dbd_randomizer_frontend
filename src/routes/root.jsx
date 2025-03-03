@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { getContacts, createContact } from "../contacts";
 import { useEffect } from "react";
-import {getAddons} from "../api/Addon.js";
+import {getAddonById, getAddons} from "../api/Addons.js";
 
 export async function loader({ request }) {
   const url = new URL(request.url);
@@ -26,7 +26,7 @@ export async function action() {
 
 function logThis(){
   console.log('hello');
-  getAddons().then(r => console.log(r));
+  getAddonById(2).then(r => console.log(r));
 }
 
 export default function Root() {
@@ -41,7 +41,14 @@ export default function Root() {
   useEffect(() => { });
 
   return (
-    <div>
+    <div className="playerHolder">
+
+      <div>
+        Survivor
+      </div>
+      <div>
+        Killer
+      </div>
       <button onClick={logThis}>press me</button>
       hello
     </div>

@@ -50,6 +50,12 @@ const router = createBrowserRouter([
                     },
                 ],
             },
+            {
+                errorElement: <ErrorPage/>,
+                children: [
+                    {}
+                ]
+            },
         ],
     },
 ]);

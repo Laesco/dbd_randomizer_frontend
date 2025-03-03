@@ -96,10 +96,15 @@ form[action$="destroy"] button {
   border-width: 0;
 }
 
+.playerHolder{
+  height: 150px;
+  width: 80px;
+}
+
 #root {
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 70px;
+  width: 100px;
 }
 
 #sidebar {
